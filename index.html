@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Alef Development</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.ico">
+</head>
+
+<body>
+
+  <div hidden> <object type="image/svg+xml" data="img/svgicons.svg"></object></div>
+  <header class="header">
+    <div class="header__container">
+      <div class="header-logo">
+        <a class="header-logo__link" href="#">logo</a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="#PM" class="header-nav__link">
+              <svg class="header-nav__icon icon">
+                <use xlink:href="img/sprite.svg#person" />
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#favorite" class="header-nav__link">
+              <svg class="header-nav__icon icon">
+                <use xlink:href="img/sprite.svg#favorite" />
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#card" class="header-nav__link">
+              <svg class="header-nav__icon icon">
+                <use xlink:href="img/sprite.svg#bag" />
+              </svg>
+            </a>
+          </li>
+          <li class="header-nav__item">
+            <button class="header-nav__burger burger">
+              <span class="burger__span" aria-hidden="true">Menu</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="burger-nav__container">
+      <nav class="burger__nav burger-nav">
+        <ul class="burger-nav__list">
+          <li class="burger-nav__item">
+            <a href="#" class="burger-nav__link">постельное белье</a>
+          </li>
+          <li class="burger-nav__item"><a href="#" class="burger-nav__link">одежда для дома</a></li>
+          <li class="burger-nav__item">
+            <a href="#" class="burger-nav__link">Одежда для улицы</a>
+          </li>
+          <li class="burger-nav__item">
+            <a href="#close" class="burger-nav__link">ВЫход</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <section class="item-card">
+        <div class="card-gallery">
+          <img src="./img/pic1-0.png" alt="pic1" class="card-gallery__bigPhoto" id="bigPhoto">
+          <div class="card-gallery__previews">
+            <img class="preview__img" src="./img/pic1-0.png" alt="pic1" onclick="galleryImage(this)">
+            <img class="preview__img" src="./img/pic1-1.jpg" alt="pic2" onclick="galleryImage(this)">
+            <img class="preview__img" src="./img/pic1-2.jpg" alt="pic3" onclick="galleryImage(this)">
+            <img class="preview__img" src="./img/pic1-3.jpg" alt="pic4" onclick="galleryImage(this)">
+            <img class="preview__img" src="./img/pic1-4.jpg" alt="pic5" onclick="galleryImage(this)">
+          </div>
+        </div>
+        <div class="card-description">
+          <h2 class="card-description__title">Пижама для девочек</h2>
+          <p class="card-description__text">Арт. 02765/46</p>
+          <div class="card-description__reviews card-reviews">
+            <p class="card-reviews__text">Отзывы</p>
+            <div class="card-reviews__rating rating" data-total-value="4">
+              <div class="rating__item" data-item-value="5">★</div>
+              <div class="rating__item" data-item-value="4">★</div>
+              <div class="rating__item" data-item-value="3">★</div>
+              <div class="rating__item" data-item-value="2">★</div>
+              <div class="rating__item" data-item-value="1">★</div>
+            </div>
+            <a href="" class="card-reviews__link"> 14 отзывов
+              <svg class="card-reviews__icon icon">
+                <use xlink:href="./img/sprite.svg#arrow-right" />
+              </svg>
+            </a>
+          </div>
+          <div class="card-description__price card-price">
+            <h3 class="card-price__title"> 800 &#x20bd; </h3>
+            <span class="card-price__text"> 1500 &#x20bd; </span>
+            <svg class="card-reviews__icon card-price__icon icon">
+              <use xlink:href="./img/sprite.svg#arrow-right" />
+            </svg>
+          </div>
+          <div class="card-description__sales card-sales">
+            <p class="card-sales__text">скидка -36%</p>
+            <p class="card-sales__text">акция -20%</p>
+          </div>
+          <form action="" method="get" class="card-description__getData">
+            <div class="card-description__select select">
+              <select name="form[]" id="cardForm" class="card-description__form form">
+                <option value="1" selected>Выбрать размер</option>
+                <option value="2">S</option>
+                <option value="3">M</option>
+                <option value="4">L</option>
+                <option value="5">XL</option>
+              </select>
+            </div>
+            <a href="#sizes" class="card-description__link">Определить размер</a>
+            <div class="card-description__cart card-cart">
+              <div class="card-cart__quantity quantity">
+                <span class="quantity__button quantity__button_minus">-</span>
+                <input type="text"  class="quantity__input" id="quantity" value="1">
+                <span class="quantity__button quantity__button_plus">+</span>
+              </div>
+              <div class="card-cart__row">
+                <button type="button" class="card-cart__button button">Добавить в корзину</button>
+                <svg class="card-reviews__icon card-cart__icon icon">
+                  <use xlink:href="./img/sprite.svg#favorite" />
+                </svg>
+              </div>
+            </div>
+          </form>
+
+        <a href="#" class="card-cart__btn">Купить в 1 клик</a>
+        <hr>
+        <div class="card-description__tabs tabs">
+          <div class="list-tabs">
+            <button type="button" data-tab="#tab_1" class="list-tabs__btn" tabindex="1"><svg class="list-tabs__icon icon">
+                <use xlink:href="img/sprite.svg#Closes" />
+              </svg>
+              <span>Описание товара</span>
+            </button>
+            <button type="button" class="list-tabs__btn" data-tab="#tab_2" tabindex="2"><svg
+                class="list-tabs__icon icon">
+                <use xlink:href="img/sprite.svg#clock" />
+              </svg>
+              <span>Доставка и возврат</span>
+            </button>
+            <button type="button" class="list-tabs__btn" data-tab="#tab_3" tabindex="3"><svg
+                class="list-tabs__icon icon">
+                <use xlink:href="img/sprite.svg#pay" />
+              </svg>
+              <span> Способы оплаты</span>
+            </button>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--+++++++++++++++++++++++++++++++++-->
+      <section class="more-items">
+        <h2 class="more-items__title">
+          <a href="" class="more-items__link">Посмотреть все стили</a>
+        </h2>
+        <div class="more-items__img">
+          <picture>
+            <source srcset="./img/pic-2-0.webp" type="image/webp">
+            <img src="./img/pic-2-0.png" alt="img" class="more-gallery">
+          </picture>
+        </div>
+        <div class="more-items__previews">
+          <div class="previews-card">
+            <div class="previews-card__hidden">
+              <svg class="previews-card__icon icon">
+                <use xlink:href="img/sprite.svg#fullScreen" />
+              </svg>
+              <div class="previews-card__info img-info">
+                <a href="#card" class="img-info__card">
+                  <svg class="img-info__icon icon">
+                    <use xlink:href="img/sprite.svg#bag" />
+                  </svg>
+                </a>
+                <a href="#" class="img-info__link">Узнай, что на мне</a>
+              </div>
+              <div class="previews-card__favorite img-favorite ">
+                <svg class="img-favorite__icon icon">
+                  <use xlink:href="img/sprite.svg#favorite" />
+                </svg>
+                <span class="img-favorite__text">200</span>
+              </div>
+            </div>
+            <picture>
+              <source srcset="./img/pic-3-0.webp" type="image/webp">
+              <img src="./img/pic-3-0.png" alt="img" class="previews-card__image">
+            </picture>
+          </div>
+          <div class="previews-card">
+            <div class="previews-card__hidden">
+              <svg class="previews-card__icon icon">
+                <use xlink:href="img/sprite.svg#fullScreen" />
+              </svg>
+              <div class="previews-card__info img-info">
+                <svg class="img-info__icon  icon">
+                  <use xlink:href="img/sprite.svg#bag" />
+                </svg>
+                <a href="#" class="img-info__link">Узнай, что на мне</a>
+              </div>
+              <div class="previews-card__favorite img-favorite ">
+                <svg class="img-favorite__icon icon">
+                  <use xlink:href="img/sprite.svg#favorite" />
+                </svg>
+                <span class="img-favorite__text">200</span>
+              </div>
+            </div>
+            <picture>
+              <source srcset="./img/pic-4-0.webp" type="image/webp">
+              <img src="./img/pic-4-0.png" alt="img" class="previews-card__image">
+            </picture>
+          </div>
+          <div class="previews-card">
+            <div class="previews-card__hidden">
+              <svg class="previews-card__icon icon">
+                <use xlink:href="img/sprite.svg#fullScreen" />
+              </svg>
+              <div class="previews-card__info img-info">
+                <svg class="img-info__icon  icon">
+                  <use xlink:href="img/sprite.svg#bag" />
+                </svg>
+                <a href="#" class="img-info__link">Узнай, что на мне</a>
+              </div>
+              <div class="previews-card__favorite img-favorite ">
+                <svg class="img-favorite__icon icon">
+                  <use xlink:href="img/sprite.svg#favorite" />
+                </svg>
+                <span class="img-favorite__text">200</span>
+              </div>
+            </div>
+            <picture>
+              <source srcset="./img/pic-5-0.webp" type="image/webp">
+              <img src="./img/pic-5-0.png" alt="img" class="previews-card__image">
+            </picture>
+          </div>
+          <div class="previews-card">
+            <div class="previews-card__hidden">
+              <svg class="previews-card__icon icon">
+                <use xlink:href="img/sprite.svg#fullScreen" />
+              </svg>
+              <div class="previews-card__info img-info">
+                <svg class="img-info__icon  icon">
+                  <use xlink:href="img/sprite.svg#bag" />
+                </svg>
+                <a href="#" class="img-info__link">Узнай, что на мне</a>
+              </div>
+              <div class="previews-card__favorite img-favorite ">
+                <svg class="img-favorite__icon icon">
+                  <use xlink:href="img/sprite.svg#favorite" />
+                </svg>
+                <span class="img-favorite__text">200</span>
+              </div>
+            </div>
+            <picture>
+              <source srcset="./img/pic-6-0.webp" type="image/webp">
+              <img src="./img/pic-6-0.png" alt="img" class="previews-card__image">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal__mask hidden"></div>
+    <div class="modal hidden" id="modal-one">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          Спасибо,&nbsp;что выбрали нас!
+          <a href="#close" class="btn-close "></a>
+        </div>
+        <div class="modal-body">
+          товар <span id="itemName">"..."</span> в количестве <span id="itemQuantity">1</span> единиц добавлен в корзину
+        </div>
+        <div class="card-cart__row modal-footer">
+          <a href="#close" class="modal-button  button button--shadow">Вернуться в корзину</a>
+          <svg class="card-reviews__icon card-cart__icon icon">
+            <use xlink:href="./img/sprite.svg#favorite" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- / Модальное окно -->
+
+    <footer class="footer">
+      <div class="footer__menu footer-menu">
+        <div class="footer-menu__about footer-about">
+          <h2 class="footer-about__title">покупателям</h2>
+          <ul class="footer-about__list">
+            <li class="footer-about__item">
+              <a href="#" class="footer-about__link">Каталог</a>
+            </li>
+            <li class="footer-about__item">
+              <a href="#" class="footer-about__link">Акции</a>
+            </li>
+            <li class="footer-about__item">
+              <a href="#" class="footer-about__link">Бренды</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu__about footer-about">
+          <h2 class="footer-about__title">о нас</h2>
+          <ul class="footer-about__list">
+            <li class="footer-about__item">
+              <a href="#" class="footer-about__link">О компании</a>
+            </li>
+            <li class="footer-about__item">
+              <a href="#" class="footer-about__link">Новости</a>
+            </li>
+            <li class="footer-about__item">
+              <a href="#" class="footer-about__link">Команда</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__contacts contacts">
+        <h1 class="contacts__title">Узнайте первыми о новинках и акциях</h1>
+        <form action="#" method="get">
+          <label class="contacts__label"><input class="contacts__input" type="email" name="Адрес электронной почты"
+              id="email" placeholder="Адрес электронной почты" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              required>
+            
+            <input type="reset" value="&#10005;">
+          </label>
+          <div class="contacts__submit">
+            <button type="submit" class="contacts__btn button button--shadow">Подписаться</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.min.js" defer async></script>
+</body>
+
+</html>
