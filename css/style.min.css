@@ -942,6 +942,12 @@ hr {
   transform: translate(-50%, -50%);
   z-index: 11;
 }
+@media (max-width: 768px) {
+  .modal {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+}
 .modal__mask {
   position: fixed;
   width: 100%;
@@ -981,12 +987,13 @@ hr {
 }
 .modal-body {
   font-weight: 600;
+  
   text-transform: uppercase;
   text-align: center;
   line-height: 2;
 }
 .modal-header {
-  font-size: 2.4rem;
+  font-size: clamp(1.2rem, 0.96rem + 1.2vw, 2rem);
   font-weight: 600;
   color: hsl(0deg, 0%, 20%);
   text-align: center;
@@ -1012,7 +1019,6 @@ hr {
   border-radius: 50%;
   background-blend-mode: color-dodge;
 }
-
 .footer {
   max-width: 139rem;
   padding: 0 0.5rem;
@@ -1052,7 +1058,6 @@ hr {
     padding: 0 2rem;
   }
 }
-
 .footer-about {
   -ms-grid-column-align: center;
   justify-self: center;
@@ -1080,7 +1085,6 @@ hr {
 .footer-about__link:focus {
   color: hsl(0deg, 0%, 51%);
 }
-
 .contacts__title {
   font-size: 1.6rem;
   text-transform: uppercase;
