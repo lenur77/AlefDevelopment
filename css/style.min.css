@@ -172,11 +172,11 @@ body {
   background: hsl(0deg, 0%, 51%);
   border-radius: 0.5rem;
 }
-::-webkit-scrollbar-tumb {
+::-webkit-scrollbar-thumb {
   background: hsl(0deg, 0%, 51%);
   border-radius: 0.5rem;
 }
-::-webkit-scrollbar-tumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: hsl(0deg, 0%, 51%);
 }
 
