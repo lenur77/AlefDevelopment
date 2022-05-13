@@ -127,10 +127,12 @@
                 <span class="quantity__button quantity__button_plus">+</span>
               </div>
               <div class="card-cart__row">
-                <button type="button" class="card-cart__button button">Добавить в корзину</button>
-                <svg class="card-reviews__icon card-cart__icon icon">
-                  <use xlink:href="./img/sprite.svg#favorite" />
-                </svg>
+                <button type="button"  data-modal="card-cart"  class="card-cart__button button">Добавить в корзину</button>
+                 <button data-modal="favorite" type="button" class="favorite__button button" >
+                  <svg class="card-reviews__icon icon">
+                    <use xlink:href="./img/sprite.svg#favorite" />
+                   </svg>
+                 </button>
               </div>
             </div>
           </form>
@@ -272,7 +274,7 @@
 
     <!-- Модальное окно -->
     <div class="modal__mask hidden"></div>
-    <div class="modal hidden" id="modal-one">
+    <div class="modal hidden" id="card-cart">
       <div class="modal-dialog">
         <div class="modal-header">
           Спасибо,&nbsp;что выбрали нас!
@@ -286,6 +288,20 @@
           <svg class="card-reviews__icon card-cart__icon icon">
             <use xlink:href="./img/sprite.svg#favorite" />
           </svg>
+        </div>
+      </div>
+    </div>
+        <div class="modal hidden" id="favorite">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          Спасибо,&nbsp;что выбрали нас!
+          <a href="#close" class="btn-close "></a>
+        </div>
+        <div class="modal-body">
+          товар <span id="itemName">"..."</span>  добавлен в избранное
+        </div>
+        <div class="card-cart__row modal-footer">
+          <a href="#close" class="modal-button  button button--shadow">Назад</a>
         </div>
       </div>
     </div>
