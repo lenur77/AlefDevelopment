@@ -572,14 +572,12 @@ body {
 .select:hover {
   border-color: hsl(0deg, 0%, 51%);
 }
-
 .form {
   border: 1px solid hsl(0deg, 0%, 20%);
   background: hsl(0deg, 0%, 100%);
   padding: 1rem;
   color: hsl(0deg, 0%, 20%);
 }
-
 .card-cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,7 +634,6 @@ body {
 .card-cart__btn:hover {
   color: hsl(0deg, 0%, 51%);
 }
-
 .quantity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,11 +677,9 @@ body {
   border-style: none;
   outline: 0;
 }
-
 .tabs {
   margin-top: 2.4rem;
 }
-
 .list-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,7 +714,6 @@ body {
 .list-tabs__icon {
   stroke: currentColor;
 }
-
 .more-items {
   display: -ms-grid;
   display: grid;
@@ -761,7 +755,6 @@ body {
   gap: 1em;
   overflow: hidden;
 }
-
 .more-gallery {
   width: 100%;
   height: 100%;
@@ -773,7 +766,6 @@ body {
     min-height: 37.5rem;
   }
 }
-
 .previews-card {
   position: relative;
 }
@@ -836,7 +828,6 @@ body {
    aspect-ratio: 1 / 1;
   }
 }
-
 .img-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,7 +878,6 @@ body {
 .img-favorite__text {
   color: hsl(0deg, 0%, 100%);
 }
-
 hr {
   border: 0.5px solid hsl(0deg, 0%, 77%);
 }
@@ -896,7 +886,6 @@ hr {
     margin-left: -4rem;
   }
 }
-
 .button {
   display: inline-block;
   max-height: 4.4rem;
@@ -923,11 +912,10 @@ hr {
   color: hsl(0deg, 0%, 100%);
 }
 .favorite__button {
-		width: 4.4rem;
-		height: 4.4rem;
-		padding: 0;	
-	}
-
+  width: 4.4rem;
+  height: 4.4rem;
+  padding: 0;	
+}
 .modal {
   position: fixed;
   width: 100%;
@@ -983,7 +971,6 @@ hr {
   grid-template-rows: auto;
   place-self: center;
   position: absolute;
-  width: 100%;
   inset: 0;
   z-index: 100;
   padding: clamp(2rem, 1.4rem + 3vw, 4rem);
