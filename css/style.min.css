@@ -792,10 +792,7 @@ body {
 }
 @media (max-width: 425px) {
   .more-items__previews {
-    gap: 0;
-    -webkit-column-gap: 0.5em;
-    -moz-column-gap: 0.5em;
-    column-gap: 0.5em;
+    gap: 0.5em;
   }
 }
 .more-gallery {
