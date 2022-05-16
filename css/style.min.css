@@ -354,14 +354,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: clamp(63em, 74.1154rem + -41.8462vw, 32em);
   width: 100%;
+  height: 77.2727272727vw; //calc(100vw * (aspect-ratio));
+  max-height: 87.8rem;
 }
-/* @media (max-width: 425px) {
+@media (max-width: 425px) {
   .card-gallery {
-    min-height: 32em;
+    min-height: 37.5rem;
   }
-} */
+}
 .card-gallery__bigPhoto {
   position: absolute;
   inset: 0;
