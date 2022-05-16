@@ -355,7 +355,7 @@ body {
 }
 @media (max-width: 425px) {
   .card-gallery {
-    min-height: 37.5rem;
+    min-height: 48rem;
   }
 }
 .card-gallery__bigPhoto {
