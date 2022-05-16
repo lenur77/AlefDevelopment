@@ -1183,6 +1183,12 @@ hr {
     min-width: 33.5rem;
   }
 }
+@media (max-width: 425px) {
+  .contacts__label {
+    width: 100%;
+    min-width: 30rem;
+  }
+}
 .contacts__btn {
   -ms-grid-column-align: end;
   justify-self: end;
